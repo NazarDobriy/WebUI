@@ -1,0 +1,39 @@
+/*--Menu element--*/
+
+.nav-item:first-child {
+    background-color: rgb(221, 146, 34);
+}
+
+.nav-item:first-child .nav-link {
+    color: #fff;
+}
+
+/*----------------*/
+
+.main-photo {
+    width: 100%;
+}
+
+.bio-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-text {
+    text-indent: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.victory-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.victory-text {
+    text-indent: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}

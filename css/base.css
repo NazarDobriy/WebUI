@@ -1,0 +1,183 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-----Header-----*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 13px 30px;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+
+.nav-item-drop-down {
+    padding: 13px 30px;
+    cursor: pointer;
+}
+
+.nav-item-drop-down:hover {
+    background-color: orange;
+}
+
+.nav-item:hover {
+    background-color: orange;
+    transition: 0.4s linear;
+}
+
+.nav-item:hover .nav-link {
+    color: #fff;
+    transition: 0.4s linear;
+}
+
+.nav-item-drop-down:hover .nav-link {
+    color: #fff;
+}
+
+.nav-item-drop-down:hover .sub-nav-list {
+    display: block;
+}
+
+.nav-link {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #212121;
+}
+
+.logo {
+    margin-right: 72px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+/*-----Sub Menu-----*/
+
+.sub-nav-list {
+    position: absolute;
+    top: 44.4px;
+    left: 104px;
+    
+    transition: 0.4s linear;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+    display: none;
+}
+
+.sub-nav-item {
+    padding: 13px 30px;
+    cursor: pointer;
+    transition: 0.4s linear;
+    background-color: #fff;
+    width: 195px;
+}
+
+.sub-nav-item:hover {
+    background-color: orange;
+}
+
+.sub-nav-item:hover .sub-nav-link {
+    color: #fff;
+}
+
+.sub-nav-link {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #212121;
+}
+
+.sub-sub-nav-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    border-left: 14px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+
+    display: none;
+}
+
+.sub-sub-nav-list:hover .triangle {
+    display: block;
+
+    border-left: 14px solid orange;
+}
+
+/*------------------*/
+/*------------------*/
+
+/*-----Footer-----*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8D8D8D;
+    height: 70px;
+}
+
+.footer-logo {
+    color: #fff;
+    margin-left: 30px;
+}
+
+.footer-logo-text {
+    font-weight: 500;
+    font-size: 19px;
+    position: relative;
+    bottom: 8px;
+}
+
+.nav-list-footer {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-item-footer {
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav-footer-vertical {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-footer-vertical:last-child {
+    margin-right: 30px;
+}
+
+.nav-footer-vertical span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*----------------*/
