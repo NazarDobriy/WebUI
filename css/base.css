@@ -11,7 +11,17 @@ body {
 
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: #d0c5c5;
+    z-index: 100;
+}
+
+.header-nav input {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
 }
 
 .nav-list {
@@ -19,17 +29,16 @@ body {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
+    position: relative;
 }
 
 .nav-item {
-    padding: 13px 30px;
-    cursor: pointer;
     transition: 0.4s linear;
 }
 
-.nav-item-drop-down {
+.nav-link {
+    display: block;
     padding: 13px 30px;
-    cursor: pointer;
 }
 
 .nav-item-drop-down:hover {
@@ -48,6 +57,7 @@ body {
 
 .nav-item-drop-down:hover .nav-link {
     color: #fff;
+    transition: 0.4s linear;
 }
 
 .nav-item-drop-down:hover .sub-nav-list {
@@ -55,19 +65,17 @@ body {
 }
 
 .nav-link {
+    position: relative;
     text-decoration: none;
     letter-spacing: 1px;
     color: #212121;
 }
 
-.logo {
-    margin-right: 72px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    cursor: pointer;
-}
-
 /*-----Sub Menu-----*/
+
+.nav-item-drop-down {
+    transition: 0.4s linear;
+}
 
 .sub-nav-list {
     position: absolute;
@@ -79,6 +87,8 @@ body {
     padding-left: 0;
     margin: 0;
 
+    transition: 0.4s linear;
+
     display: none;
 }
 
@@ -88,6 +98,7 @@ body {
     transition: 0.4s linear;
     background-color: #fff;
     width: 195px;
+    transition: 0.4s linear;
 }
 
 .sub-nav-item:hover {
@@ -137,8 +148,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8D8D8D;
-    height: 70px;
+    background-color: #272525;
+    height: 50px;
 }
 
 .footer-logo {
@@ -164,20 +175,12 @@ body {
 .nav-item-footer {
     cursor: pointer;
     color: #fff;
+    margin-right: 50px;
 }
 
-.nav-footer-vertical {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.nav-footer-vertical:last-child {
-    margin-right: 30px;
-}
-
-.nav-footer-vertical span {
-    font-size: 20px;
-    font-weight: 500;
+.nav-item-footer a img {
+    height: 24px;
+    width: 24px;
 }
 
 /*----------------*/

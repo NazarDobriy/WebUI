@@ -1,0 +1,103 @@
+/*-----Header-----*/
+
+.header-logo {
+    display: flex;
+    height: 32px;
+    width: 32px;
+
+    margin-right: 425px;
+}
+
+@keyframes boots-kick {
+    from {
+        left: 0;
+    }
+    to {
+        left: 38px;
+        bottom: -5px;
+    }
+}
+
+.boots {
+    position: relative;
+    bottom: -6px;
+
+    animation-name: boots-kick;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ball-fly {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        bottom: 6px;
+    }
+
+    100% {
+        left: 300px;
+        bottom: -1px;
+    }
+}
+
+.ball {
+    margin-left: 35px;
+    cursor: pointer;
+
+    position: relative;
+    bottom: -6px;
+
+    animation-name: ball-fly;
+    animation-delay: 1.2s;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    transition: 0.6s linear;
+}
+
+.ball:hover {
+    transform: rotate(180deg);
+}
+
+/*----------------*/
+
+/*-----Content-----*/
+
+@keyframes text-move-out {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 110px
+    }
+}
+
+.site-name {
+    animation-name: text-move-out;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.nav-link::after {
+    position: absolute;
+    content: "";
+    border-bottom: 4px solid red;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s linear;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/*-----------------*/

@@ -14,10 +14,24 @@
     width: 100%;
 }
 
+.main-mini-photo {
+    display: none;
+}
+
+.site-name {
+    width: 300px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    position: absolute;
+    top: 190px;
+    left: 110px;
+    color: white;
+}
+
 .bio-title {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .bio-text {
@@ -29,7 +43,6 @@
 .victory-title {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .victory-text {

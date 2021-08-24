@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="img/football.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/football.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+        <!-- Connect to Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Connect to CSS -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
 
-    <!-- Connect to Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Connect to Media Query -->
+    <link rel="stylesheet" href="css/media/media-base.css">
+    <link rel="stylesheet" href="css/media/media-main.css">
 
     <title>Sport page</title>
 </head>
 <body>
     <header class="header">
         <nav class="header-nav">
+            <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+            <label for="menu" class="toggleMenu">
+                <img src="https://img.icons8.com/material-sharp/24/000000/menu--v3.png" alt="Burger" class="burger-menu">
+            </label>
+
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Main</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Main</a></li>
                 <li class="nav-item-drop-down"><a href="#" class="nav-link">Matches</a>
                     <ul class="sub-nav-list">
                         <ul class="sub-sub-nav-list">
@@ -41,19 +52,28 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link">News</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Fans</a></li>
+                <li class="nav-item"><a href="fans.html" class="nav-link">Fans</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Admin</a></li>
             </ul>
         </nav>
 
-        <nav class="header-logo">
-            <span class="logo">Logo</span>
-        </nav>
+
+        <div class="header-logo">
+            <img src="img/football-boots.png" alt="" class="boots">
+            <img src="img/logo-ball.png" alt="Ball" class="ball">
+        </div>
     </header>
 
     <div class="content">
         <img src="img/ronaldinho.jpg" alt="Ronaldinho" class="main-photo">
+        <img src="img/ronaldinho-mini.jpg" alt="Ronaldinho" class="main-mini-photo">
+
+        <div class="site-name">
+            <h3>Ronaldinho is the</h3>
+            <h3>best football player</h3>
+            <h3>in the whole World!</h3>
+        </div>
         
         <h3 class="bio-title">Біографія спортсмена</h3>
 
@@ -62,7 +82,7 @@
         </p>
 
         <p class="bio-text">
-            26 червня 1999 року Роналдінью провів перший поєдинок за національну збірну своєї країни. Тоді бразильцям протистояла команда Латвії. 2000 року він забив найбільше м'ячів (6) у черговому розіграші Кубка Конфедерацій, а 2001 року переїхав до Європи, підписав контракт із паризьким клубом «Парі Сен-Жермен». 2002 року Рональдіньо став чемпіоном світу в Японії і Кореї. Провівши 5 матчів, Рональдіньо забив 2 голи, і запам'ятався чвертьфінальним штрафним ударом з 35 метрів, який застав зненацька англійського воротаря Девіда Сімена. Після таких успіхів футболістом зацікавились найсильніші клуби Європи.
+            26 червня 1999 року Роналдінью провів перший поєдинок за національну збірну своєї країни. Тоді бразильцям протистояла команда Латвії. 2000 року він забив найбільше м'ячів у черговому розіграші Кубка Конфедерацій, а 2001 року переїхав до Європи, підписав контракт із паризьким клубом «Парі Сен-Жермен». 2002 року Рональдіньо став чемпіоном світу в Японії і Кореї. Провівши 5 матчів, Рональдіньо забив 2 голи, і запам'ятався чвертьфінальним штрафним ударом з 35 метрів, який застав зненацька англійського воротаря Девіда Сімена. Після таких успіхів футболістом зацікавились найсильніші клуби Європи.
         </p>
 
         <p class="bio-text">
@@ -92,49 +112,11 @@
 
         <nav class="social-networks">
             <ul class="nav-list-footer">
-                <li class="nav-footer-vertical">
-                    <span>|</span>
-                </li>
-
-                <li class="nav-item-footer">
-                    <a href="#" class="nav-link"><img src="img/twitter.png" alt="Twitter"></a>
-                </li>
-
-                <li class="nav-footer-vertical">
-                    <span>|</span>
-                </li>
-
-                <li class="nav-item-footer">
-                    <a href="#" class="nav-link"><img src="img/facebook.png" alt="Facebook"></a>
-                </li>
-
-                <li class="nav-footer-vertical">
-                    <span>|</span>
-                </li>
-
-                <li class="nav-item-footer">
-                    <a href="#" class="nav-link"><img src="img/instagram.png" alt="Instagram"></a>
-                </li>
-
-                <li class="nav-footer-vertical">
-                    <span>|</span>
-                </li>
-
-                <li class="nav-item-footer">
-                    <a href="#" class="nav-link"><img src="img/youtube.png" alt="YouTube"></a>
-                </li>
-
-                <li class="nav-footer-vertical">
-                    <span>|</span>
-                </li>
-
-                <li class="nav-item-footer">
-                    Copyright @ Football Inc.
-                </li>
-
-                <li class="nav-footer-vertical">
-                    <span>|</span>
-                </li>
+                <li class="nav-item-footer"><a href="#" class="nav-link-footer"><img src="img/twitter.png" alt="Twitter"></a></li>
+                <li class="nav-item-footer"><a href="#" class="nav-link-footer"><img src="img/facebook.png" alt="Facebook"></a></li>
+                <li class="nav-item-footer"><a href="#" class="nav-link-footer"><img src="img/instagram.png" alt="Instagram"></a></li>
+                <li class="nav-item-footer"><a href="#" class="nav-link-footer"><img src="img/youtube.png" alt="YouTube"></a></li>
+                <li class="nav-item-footer"> Copyright @ Football Inc.</li>
             </ul>
         </nav>
     </footer>

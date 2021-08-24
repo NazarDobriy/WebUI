@@ -1,0 +1,82 @@
+/*--Menu element--*/
+
+.nav-item:nth-child(4) {
+    background-color: rgb(221, 146, 34);
+}
+
+.nav-item:nth-child(4) .nav-link {
+    color: #fff;
+}
+
+.nav-item:not(:nth-child(4)) {
+    background-color: #d0c5c5;
+}
+
+.nav-item:not(:nth-child(4)) .nav-link {
+    color: #000;
+}
+
+.nav-item:not(:nth-child(4)):hover {
+    background-color: orange;
+}
+
+.nav-item:not(:nth-child(4)):hover .nav-link {
+    color: #fff;
+}
+
+/*----------------*/
+
+.wrapper {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.content-title {
+    display: flex;
+    justify-content: center;
+}
+
+.content-article {
+    padding-bottom: 50px;
+}
+
+.content-line {
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 50px;
+}
+
+.signature {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signature-author {
+    font-weight: 600;
+}
+
+.message-box textarea {
+    outline: none;
+    border: 2px solid #000;
+    padding: 5px;
+    text-indent: 10px;
+}
+
+.message-box button {
+    padding: 6px 40px;
+    position: relative;
+    left: 40px;
+    bottom: 12px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: 500;
+
+    transition: 0.4s linear;
+}
+
+.message-box button:hover {
+    background-color: rgb(204, 25, 94);
+    color: #fff;
+    transition: 0.4s linear;
+}
