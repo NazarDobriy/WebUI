@@ -112,10 +112,6 @@
         }
     }
 
-    .nav-item-footer:last-child {
-        display: none;
-    }
-
     .bio-text {
         margin-left: 40px;
         margin-right: 40px;

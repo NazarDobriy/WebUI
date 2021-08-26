@@ -58,7 +58,8 @@
     }
 
     .sub-nav-list {
-        left: 74.5px;
+        top: 38.5px;
+        left: 67.5px;
     }
 
     .header-logo .boots {
@@ -98,12 +99,25 @@
     .footer-logo-text {
         font-size: 17px;
     }
+
+    .sub-nav-list {
+        top: 36.5px;
+        left: 64px;
+    }
 }
 
 
 @media (max-width: 800px) {
     .nav-link {
         padding: 9px 10px;
+    }
+
+    .nav-item-footer:last-child {
+        display: none;
+    }
+
+    .footer-logo-text {
+        font-size: 16px;
     }
 }
 
@@ -114,15 +128,35 @@
 
     .nav-list {
         display: none;
+        position: absolute;
+        top: 40px;
+        background-color: #d0c5c5;
+        width: 170px;
+        text-align: center;
+    }
+
+    input.toggleMenu:checked ~ ul.nav-list {
+        display: block;
+    }
+
+    .sub-nav-list {
+        z-index: 100;
+        position: absolute;
+        left: 170px;
+        top: 36px;
+    }
+    
+    .sub-nav-item {
+        padding: 14px 0px;
     }
 
     .burger-menu {
         display: block;
-        margin-left: 50px;
+        margin-left: 75px;
     }
 
     .header-logo {
-        margin-right: 50px;
+        margin-right: 75px;
     }
 
     .header {

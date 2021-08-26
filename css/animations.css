@@ -63,6 +63,15 @@
     transform: rotate(180deg);
 }
 
+.nav-link-footer img {
+    transition: 0.4s linear;
+}
+
+.nav-link-footer img:hover {
+    transition: 0.4s linear;
+    transform: scale(1.2);
+}
+
 /*----------------*/
 
 /*-----Content-----*/

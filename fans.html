@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="css/fans.css">
     <link rel="stylesheet" href="css/animations.css">
 
+    <!-- Connect to Media Query -->
+    <link rel="stylesheet" href="css/media/media-base.css">
+    <link rel="stylesheet" href="css/media/media-fans.css">
+
     <!-- Connect to Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,6 +27,11 @@
 <body>
     <header class="header">
         <nav class="header-nav">
+            <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+            <label for="menu" class="toggleMenu">
+                <img src="https://img.icons8.com/material-sharp/24/000000/menu--v3.png" alt="Burger" class="burger-menu">
+            </label>
+
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html" class="nav-link">Main</a></li>
                 <li class="nav-item-drop-down"><a href="#" class="nav-link">Matches</a>
@@ -112,12 +121,9 @@
 
             <div class="content-line"></div>
 
-            <div class="message-box">
-                <textarea name="" id="" cols="50" rows="10" placeholder="Написати звернення..."></textarea>
-                <button>Send</button>
-            </div>
+            <textarea name="" id="" cols="50" rows="10" class="message-field" placeholder="Написати звернення..."></textarea>
+            <button class="message-box">Send</button>
 
-            <br />
             <br />
         </div>
     </div>

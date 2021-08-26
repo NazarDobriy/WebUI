@@ -15,7 +15,7 @@ body {
     z-index: 100;
 }
 
-.header-nav input {
+.header-nav input.toggleMenu {
     display: none;
 }
 
