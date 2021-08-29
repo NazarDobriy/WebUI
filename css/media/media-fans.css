@@ -47,7 +47,7 @@
         width: 540px;
     }
 
-    .message-field {
+    #message-field {
         width: 65%;
     }
 }
@@ -71,7 +71,7 @@
         width: 481px;
     }
 
-    .message-field {
+    #message-field {
         width: 100%;
     }
 }
