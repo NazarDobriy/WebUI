@@ -1,5 +1,3 @@
-// Task 1
-// First way
 let myList = document.getElementById('list');
 let paragraph = document.querySelector('p');
 let itemsOfList = myList.children;
@@ -14,7 +12,6 @@ let arrOutPut = [
 
 paragraph.innerText += ' ' + arrOutPut.join(', ');
 
-// Second way
 itemsOfList = document.querySelectorAll('li');
 
 arrOutPut = [
@@ -27,7 +24,6 @@ arrOutPut = [
 
 paragraph.innerText = "Output result: " + arrOutPut.join(', ');
 
-// Task 2
 document.querySelector('h1').style.backgroundColor = "lawngreen";
 
 let paragraphs = document.getElementById('myDiv').children;
@@ -42,7 +38,6 @@ document.getElementById('myList').style.listStyleType = "none";
 
 document.querySelector('span').style.display = "none";
 
-// Task 3
 let button = document.getElementById('btn');
 button.style.cursor = "pointer";
 
