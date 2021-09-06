@@ -1,19 +1,19 @@
-let button = document.getElementsByClassName('message-btn')[0];
-let textarea = document.getElementById("message-field");
+const button = document.getElementsByClassName('message-btn')[0];
+const textarea = document.getElementById("message-field");
 
 let allArticles = document.querySelectorAll('article.content-article');
 let lastArticle = document.querySelectorAll('article.content-article')[allArticles.length - 1];
 
 button.addEventListener('click', () => {
     try {
-        let newArticle = document.createElement('article');
+        const newArticle = document.createElement('article');
         newArticle.className = 'content-article';
 
         if (textarea.value == '') {
             throw new Error("Please, enter any message!");
         }
 
-        let data = new Date();
+        const data = new Date();
 
         newArticle.innerHTML = `
             <p class="content-text">${textarea.value}</p>
