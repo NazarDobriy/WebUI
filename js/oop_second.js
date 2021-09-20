@@ -20,8 +20,8 @@ class Student extends Person {
     }
 
     showCourse() {
-        const currentYear = 2021;
-        const course = currentYear - this.year;
+        const currentYear = new Date();
+        const course = currentYear.getFullYear() - this.year;
 
         if (!(course >= 1 && course <= 6)) {
             throw new Error("You are not a student!");
@@ -30,7 +30,7 @@ class Student extends Person {
     }
 }
 
-const stud1 = new Student("Petro", "Petrenko", 2010);
+const stud1 = new Student("Petro", "Petrenko", 2017);
 
 console.log(stud1.showFullName('Petrovych'));
 

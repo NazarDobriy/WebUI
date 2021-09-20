@@ -1,0 +1,29 @@
+{
+  "name": "web-ui",
+  "version": "1.0.0",
+  "description": "Jest intro",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazarDobriy/WebUI.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "jest",
+    "unit",
+    "testing"
+  ],
+  "author": "Nazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazarDobriy/WebUI/issues"
+  },
+  "homepage": "https://github.com/NazarDobriy/WebUI#readme",
+  "devDependencies": {
+    "jest": "^27.2.0"
+  }
+}
